@@ -120,26 +120,40 @@ from operator import index
 
 
 # 18.4Sum
+#
+# nums = [-5,5,4,-3,0,0,4,-2]
+# target = 4
+#
+# finals = []
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         for k in range(j+1, len(nums)):
+#             for l in range(k+1, len(nums)):
+#                 if nums[i]+nums[j]+nums[k]+nums[l]==target:
+#                     finals.append([nums[i],nums[j],nums[k],nums[l]])
+#
+# seen = set()
+# unique_finals = []
+#
+# for sublist in finals:
+#     t = tuple(sublist)
+#     if t not in seen:
+#         seen.add(t)
+#         unique_finals.append(sublist)
+#
+#
+# print(unique_finals)
 
-nums = [-5,5,4,-3,0,0,4,-2]
-target = 4
-
-finals = []
-for i in range(len(nums)):
-    for j in range(i+1,len(nums)):
-        for k in range(j+1, len(nums)):
-            for l in range(k+1, len(nums)):
-                if nums[i]+nums[j]+nums[k]+nums[l]==target:
-                    finals.append([nums[i],nums[j],nums[k],nums[l]])
-
-seen = set()
-unique_finals = []
-
-for sublist in finals:
-    t = tuple(sublist)
-    if t not in seen:
-        seen.add(t)
-        unique_finals.append(sublist)
 
 
-print(unique_finals)
+
+
+
+
+
+
+# 217. Contains Duplicate
+
+nums = [1,2,3,1]
+t = 1
+print(len(nums) != len(set(nums)))  # True if there's a duplicate
