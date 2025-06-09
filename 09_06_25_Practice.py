@@ -78,21 +78,68 @@ from operator import index
 
 # 16. 3Sum Closest
 
-nums = [-1,2,1,-4]
-target = 1
-min_diff = float('inf')
+# nums = [-1,2,1,-4]
+# target = 1
+# min_diff = float('inf')
+#
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         for k in range(j+1,len(nums)):
+#
+#             total = nums[i] + nums[j] + nums[k]
+#             diff = abs(total - target)
+#
+#             if diff < min_diff:
+#                 min_diff = diff
+#                 closest_sum = total
+#
+#
+# print(closest_sum)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 18.4Sum
+
+nums = [-5,5,4,-3,0,0,4,-2]
+target = 4
+
+finals = []
 for i in range(len(nums)):
     for j in range(i+1,len(nums)):
-        for k in range(j+1,len(nums)):
+        for k in range(j+1, len(nums)):
+            for l in range(k+1, len(nums)):
+                if nums[i]+nums[j]+nums[k]+nums[l]==target:
+                    finals.append([nums[i],nums[j],nums[k],nums[l]])
 
-            total = nums[i] + nums[j] + nums[k]
-            diff = abs(total - target)
+seen = set()
+unique_finals = []
 
-            if diff < min_diff:
-                min_diff = diff
-                closest_sum = total
+for sublist in finals:
+    t = tuple(sublist)
+    if t not in seen:
+        seen.add(t)
+        unique_finals.append(sublist)
 
 
-print(closest_sum)
-
+print(unique_finals)
