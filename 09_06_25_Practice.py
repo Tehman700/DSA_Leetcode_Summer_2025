@@ -1,4 +1,5 @@
 # 75. Sort Colors
+from operator import index
 
 nums = [2,0,2,1,1,0]
 # as we know that 0 red
@@ -21,16 +22,37 @@ nums = [2,0,2,1,1,0]
 # Lets use more efficient algorithm
 # Using Quick Sort
 
-def quick_sort(arr):
-    if len(arr) <= 1:
-        return arr
-    pivot = arr[0]
+# def quick_sort(arr):
+#     if len(arr) <= 1:
+#         return arr
+#     pivot = arr[0]
+#
+#     less = [x for x in arr[1:] if x <= pivot]
+#     greater = [x for x in arr[1:] if x > pivot]
+#     return quick_sort(less) + [pivot] + quick_sort(greater)
 
-    less = [x for x in arr[1:] if x <= pivot]
-    greater = [x for x in arr[1:] if x > pivot]
-    return quick_sort(less) + [pivot] + quick_sort(greater)
+
+
+# As we know that there are only three numbers so we can use elif statements to create a Flow
+
+first = 0
+last = len(nums) - 1
+index = 0
+
+while index <= last:
+    if nums[index] == 0:
+        nums[first], nums[index] = nums[index], nums[first]
+        first += 1
+        index += 1
+    elif nums[index] == 2:
+        nums[last], nums[index] = nums[index], nums[last]
+        last -= 1
+    else:
+        index += 1
+
+print(nums)
 
 
 
-sorted_arr = quick_sort(nums)
-print(sorted_arr)
+
+
