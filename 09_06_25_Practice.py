@@ -1,7 +1,7 @@
 # 75. Sort Colors
 from operator import index
 
-nums = [2,0,2,1,1,0]
+# nums = [2,0,2,1,1,0]
 # as we know that 0 red
 # 1 for white
 # 2 for Blue
@@ -35,24 +35,64 @@ nums = [2,0,2,1,1,0]
 
 # As we know that there are only three numbers so we can use elif statements to create a Flow
 
-first = 0
-last = len(nums) - 1
-index = 0
-
-while index <= last:
-    if nums[index] == 0:
-        nums[first], nums[index] = nums[index], nums[first]
-        first += 1
-        index += 1
-    elif nums[index] == 2:
-        nums[last], nums[index] = nums[index], nums[last]
-        last -= 1
-    else:
-        index += 1
-
-print(nums)
-
-
+# first = 0
+# last = len(nums) - 1
+# index = 0
+#
+# while index <= last:
+#     if nums[index] == 0:
+#         nums[first], nums[index] = nums[index], nums[first]
+#         first += 1
+#         index += 1
+#     elif nums[index] == 2:
+#         nums[last], nums[index] = nums[index], nums[last]
+#         last -= 1
+#     else:
+#         index += 1
+#
+# print(nums)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 16. 3Sum Closest
+
+nums = [-1,2,1,-4]
+target = 1
+min_diff = float('inf')
+
+for i in range(len(nums)):
+    for j in range(i+1,len(nums)):
+        for k in range(j+1,len(nums)):
+
+            total = nums[i] + nums[j] + nums[k]
+            diff = abs(total - target)
+
+            if diff < min_diff:
+                min_diff = diff
+                closest_sum = total
+
+
+print(closest_sum)
 
