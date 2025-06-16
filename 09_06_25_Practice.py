@@ -163,20 +163,3 @@ print(len(nums) != len(set(nums)))  # True if there's a duplicate
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 2929. Distribute Candies Among Children II
-
-print("HELlo WOrld")
