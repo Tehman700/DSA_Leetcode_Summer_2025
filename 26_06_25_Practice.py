@@ -56,12 +56,20 @@
 
 
 
+# 153. Find the Minimum in Rotated Sorted Array
 
-
-
-
-
-
-
-
-
+# nums = [3,4,5,1,2]
+#
+# working = sorted(nums)
+#
+# rotated_times = 0
+# print(nums)
+# print(working)
+# if nums == working:
+#     rotated_times = len(nums)
+# else:
+#     k = nums.index(working[0])
+#     rotated_times = len(nums[:k])
+#
+#
+# print(rotated_times)
