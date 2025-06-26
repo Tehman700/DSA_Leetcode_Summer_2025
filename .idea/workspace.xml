@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd3d24e1-4139-432c-aba6-8ee7ee1dcec5" name="Changes" comment="2929. Distribute Candies Among Children II">
+      <change afterPath="$PROJECT_DIR$/26_06_25_Practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17_06_2025_Practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/17_06_2025_Practice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.09_06_25_Practice.executor": "Run",
     "Python.17_06_2025_Practice.executor": "Run",
+    "Python.26_06_25_Practice.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -66,7 +67,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
         <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
       </set>
     </attachedChunks>
@@ -81,6 +81,9 @@
       <workItem from="1749465643380" duration="7003000" />
       <workItem from="1749491906438" duration="1938000" />
       <workItem from="1750100593032" duration="5280000" />
+      <workItem from="1750266638642" duration="633000" />
+      <workItem from="1750362485282" duration="29000" />
+      <workItem from="1750945609081" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="Just First Commit for DSA LeetCode">
       <option name="closed" value="true" />
