@@ -92,8 +92,8 @@
 
 # 2555. Maximize Win from Two Segments
 
-prize_positions = [1,2,3,4]
-k = 0
+prize_positions = [1,5,2,6,7,25,6,1]
+k = 2
 
 
 
@@ -102,8 +102,8 @@ if k == 0:
     exit()  # Exit early
 
 unique = list(set(prize_positions))
-print(prize_positions)
-print(unique)
+# print(prize_positions)
+# print(unique)
 
 final_2D_list = []
 
@@ -121,4 +121,11 @@ for i in range(len(final_2D_list)):
         total = len(set(final_2D_list[i]) | set(final_2D_list[j]))
         max_total = max(max_total, total)
 
-print(max_total)
+# print(max_total)
+t = []
+for i in final_2D_list:
+    for j in i:
+        t.append(j)
+
+ttt=  list(set(t))
+print(ttt[0])
