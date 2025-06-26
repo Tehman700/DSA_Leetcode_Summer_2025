@@ -73,3 +73,52 @@
 #
 #
 # print(rotated_times)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2555. Maximize Win from Two Segments
+
+prize_positions = [1,2,3,4]
+k = 0
+
+
+
+if k == 0:
+    print(min(2, len(set(prize_positions))))
+    exit()  # Exit early
+
+unique = list(set(prize_positions))
+print(prize_positions)
+print(unique)
+
+final_2D_list = []
+
+for i in range(0,len(unique)):
+    starting = unique[i]
+    ending = unique[i] + k
+    print(starting, ending)
+
+    result = [x for x in prize_positions if starting <= x <= ending]
+    final_2D_list.append(result)
+
+max_total = 0
+for i in range(len(final_2D_list)):
+    for j in range(i, len(final_2D_list)):
+        total = len(set(final_2D_list[i]) | set(final_2D_list[j]))
+        max_total = max(max_total, total)
+
+print(max_total)
